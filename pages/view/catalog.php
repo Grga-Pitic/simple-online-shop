@@ -9,12 +9,13 @@ class CatalogView implements iView {
 		$code = '';
 
 		foreach ($productsData as $product) {
-			$code .= '<p>';
+			$productURI = '/product?id=' . $product['id']; 
+			$code .= "<p><a href=$productURI>";
 			foreach ($product as $value) {
 				$code .= $value . '; ';
 			}
 			
-			$code .= '</p>';
+			$code .= '</a></p>';
 		}
 
 		return "<p>$code</p>";

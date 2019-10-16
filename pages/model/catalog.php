@@ -6,16 +6,13 @@ include_once 'iModel.php';
 class CatalogModel extends AbstractModel implements iModel {
 
 	public function __construct(){
-		parent::__construct(array('test'));
+		parent::__construct(array());
 	}
 
 	private $categories;
-	private $currentCategory;
-	private $currentProduct;
 
 	public function getProductsByCat($db, $category){
-		$query = "select `name`, `description`, `price`, `discount`, `picture` from product where cat_id in (select id from category where address = \"$category\")";
-		// $query = "select `name`, `description`, `price`, `discount`, `picture` from product";
+		$query = "select `id`, `name`, `description`, `price`, `discount`, `picture` from product where cat_id in (select id from category where address = \"$category\")";
 		$result = $db->executeQuery($query);
 
 		$product_data = array();

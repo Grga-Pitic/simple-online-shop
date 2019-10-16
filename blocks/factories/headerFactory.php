@@ -15,6 +15,7 @@ class HeaderFactory
 		$horMenuArray['catalog'] = 'Каталог';
 		$horMenuArray['contact'] = 'Контакты';
 		$horMenuArray['auth'] = 'Авторизация';
+		$horMenuArray['cart'] = 'Корзина';
 
 		$header = new Header($horMenuArray, 'images/logo.jpeg'); // only hardcode!
 

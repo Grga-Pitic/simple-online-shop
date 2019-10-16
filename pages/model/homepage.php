@@ -9,4 +9,4 @@ class HomepageModel extends AbstractModel implements iModel {
 	}
 }
 
-?> 
+?>
