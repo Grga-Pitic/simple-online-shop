@@ -13,9 +13,9 @@ class CartModel extends AbstractModel implements iModel {
 		$data = array();
 		foreach ($idArray as $id) {
 			$query = "select * from product where id=$id";
-			$result = $db->executeQuery($query);
+			$result = $db->executeQuery($query)->fetch();
 		
-			array_push($data, mysql_fetch_array(($result), MYSQL_ASSOC));
+			array_push($data, $result);
 		}
 
 		$this->AddDataByKey('data', $data);

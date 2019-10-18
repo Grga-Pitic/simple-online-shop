@@ -13,7 +13,7 @@ class ProductModel extends AbstractModel implements iModel {
 		$query = "select `id`, `name`, `description`, `price`, `discount`, `picture` from product where id = $id"; 
 		$result = $db->executeQuery($query); // получаем инфу о продукте по id.
 
-		$data = mysql_fetch_array($result, MYSQL_ASSOC);
+		$data = $result->fetch();
 
 		$this->AddDataByKey('data', $data);
 	}	
@@ -21,11 +21,11 @@ class ProductModel extends AbstractModel implements iModel {
 	public function getCommentsByID($db, $id){
 		$query = "select name, text from comments where product_id=$id";
 
-		$result = $db->executeQuery($query);
+		$result = $db->executeQuery($query)->fetchAll();
 
 		$commentsArray = array();
 
-		while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+		foreach ($result as $row) {
 			array_push($commentsArray, $row); // добавляем инфу о продукте в массив
 		}
 

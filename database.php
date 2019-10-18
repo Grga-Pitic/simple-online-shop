@@ -9,13 +9,14 @@ DEFINE( 'PASSWORD', '' );
 class DBConnection {
 	private static $instance;
 
+	private $connection;
+
 	public function open($host, $user, $password, $database){
-		$link = mysql_connect($host, $user, $password) or die('Не удалось соединиться: ' . mysql_error());
-		mysql_select_db($database);
+		$this->connection = new PDO("mysql:host=$host;dbname=$database", $user, $password);
 	}
 
 	public function executeQuery($query){
-		$result = mysql_query($query);
+		$result = $this->connection->query($query);
 		return $result;
 	}
 
