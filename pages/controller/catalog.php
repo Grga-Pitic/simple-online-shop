@@ -1,8 +1,7 @@
 <?php
 
 include_once 'iController.php';
-include_once '/database.php';
-include_once '/blocks/left.php';
+include_once 'blocks/left.php';
 
 class CatalogController implements iController{
 	public function getContentCode($model, $view){

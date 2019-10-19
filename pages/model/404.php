@@ -1,7 +1,7 @@
 <?php
 
-include_once '/pages/model/iModel.php';
-include_once '/pages/model/abstractModel.php';
+include_once 'pages/model/iModel.php';
+include_once 'pages/model/abstractModel.php';
 
 class PageNotFoundModel extends AbstractModel implements iModel  {
 

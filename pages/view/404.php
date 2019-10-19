@@ -1,6 +1,6 @@
 <?php
 
-include_once '/pages/view/iView.php';
+include_once 'pages/view/iView.php';
 
 class PageNotFoundView implements iView {
 	public function getCode($model){

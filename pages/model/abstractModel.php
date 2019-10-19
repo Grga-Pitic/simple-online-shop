@@ -1,6 +1,6 @@
 <?php
 
-include_once '/pages/model/iModel.php';
+include_once 'pages/model/iModel.php';
 
 abstract class AbstractModel implements iModel {
 

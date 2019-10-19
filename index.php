@@ -2,8 +2,8 @@
 
 
 
-include_once '/pages/router.php';
-include_once '/database.php';
+include_once 'pages/router.php';
+include_once 'database.php';
 
 $router = new Router();
 
@@ -30,7 +30,7 @@ echo $model->sendCookie();
    <head>
 		<title>Главная</title>
 		<?php 
-    	include_once '/blocks/factories/headerFactory.php';
+    	include_once 'blocks/factories/headerFactory.php';
     	$header = HeaderFactory::create();
     	echo $header->getCode();
     	echo '<br>';
@@ -63,7 +63,7 @@ echo $model->sendCookie();
 		<tr height="100">
 			<td></td>
 			<td align="right"><?php 
-			      	include_once '/blocks/footer.php';
+			      	include_once 'blocks/footer.php';
 					$footer = new Footer('Все права защищены (нет).');
 					echo $footer->getCode();
 					?>
