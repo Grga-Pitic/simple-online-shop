@@ -1,7 +1,8 @@
 <?php
 
-include_once 'iController.php';
-include_once 'database.php';
+namespace Pages\Controller;
+
+use Pages\DBConnection;
 
 class ProductController implements iController {
 

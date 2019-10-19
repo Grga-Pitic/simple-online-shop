@@ -1,6 +1,8 @@
 <?php
 
-include_once 'blocks/header.php';
+namespace Blocks\Factories;
+
+use Blocks\Header;
 
 /**
 * 

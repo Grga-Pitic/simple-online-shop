@@ -1,21 +1,16 @@
 <?php
 
-include_once 'pages/controller/iController.php';
+namespace Pages\Controller;
 
-/**
-*  
-*/
-class PageNotFoundController implements iController {
-	
+class HomepageController implements iController {
+
 	public function getContentCode($model, $view){
 		return $view->getCode($model);
 	}
 
-
 	public function getMenuCode($model){
 		return '';
 	}
-
 
 }
 

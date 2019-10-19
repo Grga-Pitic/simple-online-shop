@@ -1,5 +1,9 @@
 <?php 
 
+namespace Pages;
+
+use \PDO;
+
 DEFINE( 'DB_ADDRESS', '127.0.0.1' );
 DEFINE( 'DB_PORT', '3306' );
 DEFINE( 'DB_NAME', 'myshop' );

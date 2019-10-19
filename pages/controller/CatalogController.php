@@ -1,7 +1,9 @@
 <?php
 
-include_once 'iController.php';
-include_once 'blocks/left.php';
+namespace Pages\Controller;
+
+use Pages\DBConnection;
+use Blocks\Left;
 
 class CatalogController implements iController{
 	public function getContentCode($model, $view){

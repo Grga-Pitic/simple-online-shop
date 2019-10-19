@@ -1,7 +1,6 @@
 <?php
 
-include_once 'pages/model/iModel.php';
-include_once 'pages/model/abstractModel.php';
+namespace Pages\Model;
 
 class PageNotFoundModel extends AbstractModel implements iModel  {
 

@@ -1,6 +1,6 @@
 <?php
 
-include_once 'pages/model/iModel.php';
+namespace Pages\Model;
 
 abstract class AbstractModel implements iModel {
 

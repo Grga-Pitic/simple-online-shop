@@ -1,7 +1,8 @@
 <?php
 
-include_once 'abstractModel.php';
-include_once 'iModel.php';
+namespace Pages\Model;
+
+use Pages\Model\AbstractModel;
 
 class CatalogModel extends AbstractModel implements iModel {
 
@@ -21,6 +22,8 @@ class CatalogModel extends AbstractModel implements iModel {
 		}
 
 		$this->AddDataByKey('products', $product_data);
+
+		$this->AddDataByKey('test', 'test');
 	}
 
 	public function getCategoriesFromDB($db){

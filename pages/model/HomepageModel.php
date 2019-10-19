@@ -1,7 +1,6 @@
 <?php
 
-include_once 'abstractModel.php';
-include_once 'iModel.php';
+namespace Pages\Model;
 
 class HomepageModel extends AbstractModel implements iModel {
 	public function __construct(){

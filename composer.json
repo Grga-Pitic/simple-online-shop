@@ -1,0 +1,17 @@
+{
+    "name": "grga/shop",
+    "description": "simple shop for the php workout",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ivan K",
+            "email": "ikon98@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pages\\": "pages",
+            "Blocks\\": "blocks"
+        }
+    }
+}

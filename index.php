@@ -1,9 +1,12 @@
 <?php
 
+namespace Pages;
 
-
-include_once 'pages/router.php';
-include_once 'database.php';
+require_once 'vendor/autoload.php';  
+use Pages\Router;
+use Pages\DBConnection;
+use Blocks\Factories\HeaderFactory;
+use Blocks\Footer;
 
 $router = new Router();
 
@@ -19,6 +22,8 @@ if(!isset($_COOKIE['cart'])){
 }
 
 
+$conn = new DBConnection();
+
 $conn = DBConnection::getInstance();
 $conn->open(DB_ADDRESS, LOGIN, PASSWORD, DB_NAME);
 
@@ -30,7 +35,6 @@ echo $model->sendCookie();
    <head>
 		<title>Главная</title>
 		<?php 
-    	include_once 'blocks/factories/headerFactory.php';
     	$header = HeaderFactory::create();
     	echo $header->getCode();
     	echo '<br>';
@@ -63,7 +67,6 @@ echo $model->sendCookie();
 		<tr height="100">
 			<td></td>
 			<td align="right"><?php 
-			      	include_once 'blocks/footer.php';
 					$footer = new Footer('Все права защищены (нет).');
 					echo $footer->getCode();
 					?>

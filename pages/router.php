@@ -1,5 +1,7 @@
 <?php
 
+namespace Pages;
+
 DEFINE( 'MODEL_PATH', 'pages/model/' );
 DEFINE( 'VIEW_PATH', 'pages/view/' );
 DEFINE( 'CONTROL_PATH', 'pages/controller/' );
@@ -28,29 +30,29 @@ class Router
 
 	private function create($path, $type){
 		$pageName = $this->getRoute();
-		$className = $pageName . $type; 
-		$classPath = $path . $pageName . '.php';
+		$className = "Pages\\$type\\" . $pageName . $type; 
+		$classPath = $path . $pageName . $type . '.php';
 
 	//	return $classPath;
 
 		if(file_exists($classPath)){      // если файл с классом существует
-			include_once $classPath;      // подключаем файл и возвращаем объект.
+			// include_once $classPath;      // подключаем файл и возвращаем объект.
 			$newObject = new $className(); 
 			return $newObject;
 		}
 
-		include_once $path . '404.php';
-		$notFoundClass = 'PageNotFound' . $type;
+		// include_once $path . '404.php';
+		$notFoundClass = "Pages\\$type\\PageNotFound" . $type;
 		return new $notFoundClass();
 	}
 
 	private function getRoute(){
 		if(empty($_GET['route'])){
-			return 'homepage';
+			return 'Homepage';
 		}		
 
 		if($_GET['route'] == 'index'){
-			return 'homepage';
+			return 'Homepage';
 		}
 
 		return $_GET['route'];

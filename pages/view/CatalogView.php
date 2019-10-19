@@ -1,6 +1,6 @@
 <?php
 
-include_once 'iView.php';
+namespace Pages\View;
 
 class CatalogView implements iView {
 	public function getCode($model){

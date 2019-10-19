@@ -1,6 +1,8 @@
 <?php
 
-include_once 'iController.php';
+namespace Pages\Controller;
+
+use Pages\DBConnection;
 
 class CartController implements iController {
 	public function getContentCode($model, $view) {
