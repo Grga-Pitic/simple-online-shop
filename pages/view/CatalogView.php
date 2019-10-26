@@ -21,5 +21,3 @@ class CatalogView implements iView {
 		return "<p>$code</p>";
 	}
 }
-
-?>

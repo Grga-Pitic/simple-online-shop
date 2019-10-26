@@ -22,5 +22,3 @@ abstract class AbstractModel implements iModel {
 		
 	}
 }
-
-?>

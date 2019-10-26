@@ -20,5 +20,3 @@ class CatalogController implements iController{
 		return  $leftBlock->getCode();
 	}
 }
-
-?>

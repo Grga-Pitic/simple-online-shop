@@ -17,5 +17,3 @@ class CartView implements iView {
 		return $code;
 	}
 }
-
-?>

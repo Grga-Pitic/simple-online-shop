@@ -18,5 +18,3 @@ class PageNotFoundController implements iController {
 
 
 }
-
-?>

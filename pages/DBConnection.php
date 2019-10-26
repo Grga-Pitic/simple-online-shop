@@ -32,5 +32,3 @@ class DBConnection {
 		return self::$instance;
 	}
 }
-
-?>

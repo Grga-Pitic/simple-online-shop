@@ -39,5 +39,3 @@ class ProductController implements iController {
 	}
 
 }
-
-?>

@@ -10,5 +10,3 @@ interface iController {
 	public function getMenuCode($model);
 
 }
-
-?>

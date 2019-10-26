@@ -10,5 +10,3 @@ class PageNotFoundView implements iView {
 	}
 
 }
-
-?>

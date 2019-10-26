@@ -24,5 +24,3 @@ class HeaderFactory
 		return $header;
 	}
 }
-
-?>

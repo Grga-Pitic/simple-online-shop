@@ -50,5 +50,3 @@ class ProductModel extends AbstractModel implements iModel {
 	}
 
 }
-
-?>

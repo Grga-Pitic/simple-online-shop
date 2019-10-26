@@ -16,5 +16,3 @@ class CartController implements iController {
 		return '';
 	}
 }
-
-?>

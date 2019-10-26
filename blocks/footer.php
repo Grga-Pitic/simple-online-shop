@@ -20,5 +20,3 @@ class Footer
 		return '<p>' . $this->text . '</p>';
 	}
 }
-
-?>

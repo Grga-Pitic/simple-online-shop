@@ -13,5 +13,3 @@ class HomepageController implements iController {
 	}
 
 }
-
-?>

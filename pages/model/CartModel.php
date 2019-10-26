@@ -54,5 +54,3 @@ class CartModel extends AbstractModel implements iModel {
 	}
 
 }
-
-?>

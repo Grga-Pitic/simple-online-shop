@@ -41,5 +41,3 @@ class CatalogModel extends AbstractModel implements iModel {
 	}
 
 }
-
-?>

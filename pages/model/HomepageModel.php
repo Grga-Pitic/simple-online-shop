@@ -7,5 +7,3 @@ class HomepageModel extends AbstractModel implements iModel {
 		parent::__construct(array('text' => 'Простой интернет магазин для изучения PHP.'));
 	}
 }
-
-?>

@@ -7,5 +7,3 @@ interface iModel {
 
 	public function sendCookie();
 }
-
-?>

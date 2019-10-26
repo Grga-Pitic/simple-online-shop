@@ -9,5 +9,3 @@ class HomepageView implements iView {
 		return $code;
 	}
 }
-
-?>

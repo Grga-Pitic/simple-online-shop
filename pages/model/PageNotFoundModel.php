@@ -14,5 +14,3 @@ class PageNotFoundModel extends AbstractModel implements iModel  {
 	}
 
 }
-
-?>
